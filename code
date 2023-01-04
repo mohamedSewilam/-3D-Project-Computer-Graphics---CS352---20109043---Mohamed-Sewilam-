@@ -95,7 +95,7 @@ void Draw_Spheres (void)
     // rotation about Z axis
     glRotatef(zRotated,0.0,0.0,1.0);
     // scaling transformation
-    glScalef(1.0,1.0,1.0);
+    glScalef(1.0,1.0,0.6);
     
     glutSolidIcosahedron();
     
