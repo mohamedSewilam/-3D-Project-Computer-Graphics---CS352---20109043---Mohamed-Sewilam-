@@ -1495,7 +1495,7 @@ int main (int argc, char **argv)
     glutIdleFunc    (idleFunc);
 
     texture();
-    PlaySound(TEXT("music3.wav"), NULL, SND_SYNC);
+    PlaySound(TEXT("music3.mp3"), NULL, SND_SYNC);
 
     glutSpecialFunc(keyPress);
     glutMainLoop();
