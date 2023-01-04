@@ -104,6 +104,40 @@ void Draw_Spheres (void)
 
 
 //----------------------SPACECFRAT---------------------------------
+//top pyramid(manual drawing)
+ glPushMatrix();
+int degree =10;
+    glTranslatef(8.0,6.2,-4.5);
+    glRotatef(degree, 10.0f, 10.0f, 0.0f);
+	 glBegin(GL_TRIANGLES);           // Begin drawing the pyramid with 4 triangles
+      // Front
+      glColor3f(1.0f, 0.0f, 0.0f);
+      glVertex3f( 0.0f, 0.3f, 0.0f);
+      glVertex3f(-0.3f, -0.3f, 0.3f);
+      glVertex3f(0.3f, -0.3f, 0.3f);
+
+      // Right
+      glColor3f(0.3f, 0.0f, 0.0f);
+      glVertex3f(0.0f, 0.3f, 0.0f);
+      glVertex3f(0.3f, -0.3f, 0.3f);
+      glVertex3f(0.3f, -0.3f, -0.3f);
+
+      // Back
+      glColor3f(0.3f, 0.0f, 0.0f);
+      glVertex3f(0.0f, 0.3f, 0.0f);
+      glColor3f(0.0f, 0.3f, 0.0f);
+      glVertex3f(0.3f, -0.3f, -0.3f);
+      glColor3f(0.0f, 0.0f, 0.3f);
+      glVertex3f(-0.3f, -0.3f, -0.3f);
+
+      // Left
+      glColor3f(0.3f,0.0f,0.0f);
+      glVertex3f( 0.0f, 0.3f, 0.0f);
+      glVertex3f(-0.3f,-0.3f,-0.3f);
+      glVertex3f(-0.3f,-0.3f, 0.3f);
+     glEnd();   // Done drawing the pyramid
+    glPopMatrix ();
+
 
 
     glPushMatrix();
@@ -146,7 +180,6 @@ void Draw_Spheres (void)
     glPopMatrix ();
 
     // Pyramid using manual drawing (the down part of spacecraft)
-    int degree =10;
     glPushMatrix();
     glTranslatef(8.0,4.0,-4.5);
     glRotatef(degree, 10.0f, 10.0f, 0.0f);
