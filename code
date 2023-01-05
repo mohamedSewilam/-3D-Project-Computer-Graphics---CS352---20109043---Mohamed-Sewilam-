@@ -59,9 +59,9 @@ void keyPress(int key,int x,int y)
 
 }
 
-//------------------------------  Draw_Spheres   -------------------------------
+//------------------------------  Draw  -------------------------------
 
-void Draw_Spheres (void)
+void Draw (void)
 {
 
     glMatrixMode   (GL_MODELVIEW);
@@ -1488,7 +1488,7 @@ int main (int argc, char **argv)
     glClearColor (0.0, 0.1, 0.2, 0.1);
 
 
-    glutDisplayFunc (Draw_Spheres);
+    glutDisplayFunc (Draw);
 
     glutTimerFunc(0,timer,0);
     glutReshapeFunc (reshapeFunc);
